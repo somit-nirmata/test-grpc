@@ -2,51 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: grpc-ingress
-  namespace: default
-  selfLink: /apis/networking.k8s.io/v1/namespaces/default/ingresses/grpc-ingress
-  uid: febfb315-84a9-41d9-97b2-d2b05b44da08
-  resourceVersion: '1503359'
-  generation: 7
-  creationTimestamp: '2022-08-08T18:18:19Z'
-  annotations:
-    kubernetes.io/ingress.class: haproxy
-  managedFields:
-    - manager: kubectl-client-side-apply
-      operation: Update
-      apiVersion: networking.k8s.io/v1
-      time: '2022-08-08T18:18:19Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:metadata:
-          f:annotations: {}
-    - manager: node-fetch
-      operation: Update
-      apiVersion: networking.k8s.io/v1
-      time: '2022-08-16T15:02:27Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:spec:
-          f:tls: {}
-    - manager: kubectl-edit
-      operation: Update
-      apiVersion: networking.k8s.io/v1
-      time: '2022-08-16T19:24:51Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:metadata:
-          f:annotations:
-            f:kubernetes.io/ingress.class: {}
-        f:spec:
-          f:rules: {}
-    - manager: haproxy-ingress-controller
-      operation: Update
-      apiVersion: networking.k8s.io/v1
-      time: '2022-08-16T20:08:40Z'
-      fieldsType: FieldsV1
-      fieldsV1:
-        f:status:
-          f:loadBalancer:
-            f:ingress: {}
 status:
   loadBalancer:
     ingress:
