@@ -54,10 +54,10 @@ status:
 spec:
   tls:
     - hosts:
-        - test-grpc.lab.nirmata.co
+        - example.com
       secretName: new-tls-secret
   rules:
-    - host: test-grpc.lab.nirmata.co
+    - host: example.com
       http:
         paths:
           - path: /
